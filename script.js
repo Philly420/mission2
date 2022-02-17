@@ -2,6 +2,8 @@ const current = document.querySelector("#current");
 const imgs = document.querySelector(".imgs");
 const img = document.querySelectorAll(".imgs img");
 const opacity = 0.6;
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
 img[0].style.opacity = opacity;
 
@@ -18,9 +20,6 @@ function imgClick(e) {
 
   e.target.style.opacity = opacity;
 }
-
-const toggleButton = document.getElementsByClassName("toggle-button")[0];
-const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
 toggleButton.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
